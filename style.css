@@ -1,0 +1,259 @@
+*,*::after,*::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root {
+    --colorDark1: #8f980f;
+    --colorDark2: #a6cd32;
+    --colorLight1: #d2e370;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper{
+    min-width: 95vw;
+    min-height: 100vh;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);;
+}
+
+h1.heading{
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 20px;
+}
+
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    margin: 0% auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.grant-location-container{
+    margin-top: 4.8rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.grant-location-container.active{
+    display: flex;
+}
+
+.grant-location-container div:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.grant-location-container div:last-of-type{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+}
+
+.grant-location-container button{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px
+}
+
+
+.user-weather-container{
+    margin-top: 4rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-location{
+    display: flex;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.user-location div:first-of-type{
+    font-size: 2rem;  
+}
+
+.user-location img:first-of-type{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+div[weatherDesc]{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+img[weatherDescImg]{
+    width: 90px;
+    height: 90px;
+}
+
+div[Temp]{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.parameter{
+    width: 90%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    gap: 5px 0;
+}
+
+.para img{
+    width: 50px;
+    height: 50px;
+}
+
+.para div:first-of-type{
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.para div:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.user-weather-container.active{
+    display: flex;
+}
+
+.search-weather-container{
+    margin-block: 4rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img[searchBtn]{
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 100%;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px;
+}
+
+#searchCity{
+    all: unset;
+    width: 52%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+
+#searchCity::placeholder{
+    color: var(--colorLight2);
+    padding: 20px;
+}
+
+.search-weather-container.active{
+    display: flex;
+}
+
+
+.loading-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading-container div:first-of-type{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--colorLight2);
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.error-page-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error-page-container div:first-of-type{
+    font-size: 2rem;
+}
+
+.error-page-container img:first-of-type{
+    width: 13rem;
+    height: 13rem;
+}
+
+.error-page-container.active{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

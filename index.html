@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+       <h1 class="heading">WEATHER APP</h1> 
+
+       <div class="tab-container">
+            <div userWeather class="tab">Your Weather</div>       
+            <div searchWeather class="tab">Search Weather</div>
+       </div>
+
+       <div class="grant-location-container">
+            <img src="/public/assets/locn.png" alt="" width="80" height="80" loading="lazy">
+            <div>Grant Location Access</div>
+            <div>Allow Access to get weather information</div>
+            <button grantLocationBtn>GRANT ACCESS</button>
+       </div>
+
+
+       <div class="search-weather-container">
+            <input type="text" placeholder="Search for City..." id="searchCity" searchInputField>
+            <label for="searchCity"></label>
+            <img src="/weatherAppProject/assets/search.png" alt="" searchBtn>
+        </div>
+
+
+       <div class="loading-container">
+            <img src="/weatherAppProject/assets/loading.gif" alt="" width="200" height="200">
+            <div>Loading</div>
+       </div>
+
+       <div class="user-weather-container">
+            <div class="user-location">
+                <div cityName></div>
+                <img src="" alt="" countryFlag>
+            </div>
+
+            <div weatherDesc></div>
+            <img src="" alt="" weatherDescImg>
+            <div Temp></div>
+
+            <div class="parameter">
+                <div class="para">
+                    <img src="/public/assets/wind.png" alt="wind image">
+                    <div>WINDSPEED</div>
+                    <div windspeed></div>
+                </div>
+                <div class="para">
+                    <img src="/public/assets/dew.png" alt="humidity image">
+                    <div>HUMIDITY</div>
+                    <div humidity></div>
+                </div>
+                <div class="para">
+                    <img src="/public/assets/cloud.png" alt="cloud image">
+                    <div>CLOUDS</div>
+                    <div cloudiness></div>
+                </div>
+            </div>
+       </div>
+
+       <div class="error-page-container">
+            <div>City Not Found. Try entering the closest area</div>
+            <img src="/public/assets/failure.png" alt=""  loading="lazy">
+       </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
